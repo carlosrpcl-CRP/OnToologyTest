@@ -1,0 +1,26 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "http://www.opengis.net/ont/geosparql#Feature" "http://xmlns.com/foaf/0.1/Agent" "base:PublicService" "base:Agent" "https://w3id.org/saref#Sensor" "https://w3id.org/saref#Device" "http://www.w3.org/2006/time#Interval" "base:PublicAdministration" "http://www.opengis.net/ont/geosparql#SpatialObject" "http://www.opengis.net/ont/geosparql#Geometry" "http://www.w3.org/2006/time#TemporalEntity" "base:Country" "base:AdministrativeArea" "http://xmlns.com/foaf/0.1/Person" "base:District" "base:City" "wgs84_pos:Point" "base:Facility" "http://www.w3.org/ns/org#Organization" "base:CityObject" "http://www.w3.org/2006/time#Instant" "https://w3id.org/saref#Actuator" "base:Neighbourhood" "http://purl.org/vocab/cpsv#PublicService" ; /*classes style*/
+	"https://w3id.org/saref#Sensor" -> "https://w3id.org/saref#Device" [ label = "rdfs:subClassOf" ];
+	"base:PublicService" -> "http://purl.org/vocab/cpsv#PublicService" [ label = "rdfs:subClassOf" ];
+	"base:Neighbourhood" -> "base:AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"base:Facility" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/ns/org#Organization" -> "http://xmlns.com/foaf/0.1/Agent" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2006/time#Interval" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"wgs84_pos:Point" -> "http://www.opengis.net/ont/geosparql#Geometry" [ label = "rdfs:subClassOf" ];
+	"base:City" -> "base:AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"http://xmlns.com/foaf/0.1/Person" -> "http://xmlns.com/foaf/0.1/Agent" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Feature" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"base:AdministrativeArea" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"base:District" -> "base:AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/saref#Actuator" -> "https://w3id.org/saref#Device" [ label = "rdfs:subClassOf" ];
+	"base:CityObject" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+	"http://www.w3.org/2006/time#Instant" -> "http://www.w3.org/2006/time#TemporalEntity" [ label = "rdfs:subClassOf" ];
+	"http://www.opengis.net/ont/geosparql#Geometry" -> "http://www.opengis.net/ont/geosparql#SpatialObject" [ label = "rdfs:subClassOf" ];
+	"base:PublicAdministration" -> "http://www.w3.org/ns/org#Organization" [ label = "rdfs:subClassOf" ];
+	"base:Agent" -> "http://xmlns.com/foaf/0.1/Agent" [ label = "rdfs:subClassOf" ];
+	"base:Country" -> "base:AdministrativeArea" [ label = "rdfs:subClassOf" ];
+	"https://w3id.org/saref#Device" -> "http://www.opengis.net/ont/geosparql#Feature" [ label = "rdfs:subClassOf" ];
+
+}
