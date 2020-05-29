@@ -41,8 +41,8 @@ node [shape = rectangle, color="orange"]; "terms:LinguisticSystem" "http://www.o
 	"NULL" -> "https://w3id.org/saref#hasTimestamp" [ label = "owl:onProperty" ];
 	"NULL" -> "https://w3id.org/saref#hasValue" [ label = "owl:onProperty" ];
 	"NULL" -> "https://w3id.org/saref#relatesToMeasurement" [ label = "owl:onProperty" ];
-	"NULL" -> "https://w3id.org/saref#isMeasuredByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> "base:hasExpirationDate" [ label = "owl:onProperty" ];
+	"NULL" -> "https://w3id.org/saref#isMeasuredByDevice" [ label = "owl:onProperty" ];
 	"NULL" -> "base:isDerivedFrom" [ label = "owl:onProperty" ];
 	"NULL" -> "https://w3id.org/saref#isPropertyOf" [ label = "owl:onProperty" ];
 	"NULL" -> "base:isAvailableInLanguage" [ label = "owl:onProperty" ];
